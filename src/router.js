@@ -14,6 +14,16 @@ export default new Router({
       component: Home
     },
     {
+      path: '/grid',
+      name: 'grid',
+      component: () => import('./views/Grid.vue')
+    },
+    {
+      path: '/buttons',
+      name: 'buttons',
+      component: () => import('./views/Buttons.vue')
+    },
+    {
       path: '/about',
       name: 'about',
       // route level code-splitting
