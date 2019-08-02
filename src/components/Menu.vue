@@ -16,6 +16,7 @@
             <v-btn text class="white--text" to="/">Home</v-btn>
             <v-btn text class="white--text" to="/grid">Grid</v-btn>
             <v-btn text class="white--text" to="/buttons">Buttons</v-btn>
+            <v-btn text class="white--text" to="/activities">Activities</v-btn>
         </v-toolbar-items>
         
         </v-app-bar>
@@ -42,6 +43,15 @@
 
               </v-list-item-content>
             </v-list-item>
+
+            <v-layout column>
+              <v-flex mx-3>
+                <v-btn color="success" class="my-2" block :to="{name:'home'}">Home</v-btn>
+                <v-btn color="success" class="my-2" block :to="{name:'grid'}">Grid</v-btn>
+                <v-btn color="success" class="my-2" block :to="{name:'buttons'}">Buttons</v-btn>
+                <v-btn color="success" class="my-2" block :to="{name:'activities'}">Activities</v-btn>
+              </v-flex>
+            </v-layout>
 
         </v-navigation-drawer>
 
